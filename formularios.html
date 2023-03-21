@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+    </ul>
+
+    <form action="index.html" name="dados" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="idNome">Nome: </label>
+            <input id="idNome" type="text" name="nome"> <br>
+            <label for="idEmail">E-mail: </label>
+            <input id="idEmail" type="email" name="email"> <br>
+            <label for="idSenha">Senha:</label>
+            <input type="password" name="senha" id="idSenha"> <br>
+            <label for="idTelefone">Telefone:</label>
+            <input type="tel" name="telefone" id="idTelefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+            <label for="idData">Data:</label>
+            <input type="date" name="data" id="idData"> <br>
+            <label for="idHora">Hora:</label>
+            <input type="time" name="hora" id="idHora">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="idEndereco">Endereço: </label>
+            <input id="idEndereco" type="text" name="endereco"> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Busca</legend>
+            <label for="idSearch">Busca</label>
+            <input type="search" name="search" id="idSearch"> <br>
+            <label for="idUrl">URL: </label>
+            <input type="url" name="url" id="idUrl"> <br>
+            <label for="idDataHora">Data e Hora:</label>
+            <input type="datetime-local" name="data-hora" id="idDataHora"> <br>
+            <label for="">Mês</label>
+            <input type="month" name="" id=""> <br>
+            <label for="">Semana</label>
+            <input type="week" name="" id=""> <br>
+            <label for="">Números: </label>
+            <input type="number" name="" id="" min="2" max="6" step="2" > <br>
+            <label for="">Nota</label>
+            <input type="range" name="" id="" min="0" max="10" step="1">
+        </fieldset>
+        <fieldset>
+            <legend>Tamanho</legend>
+            <input type="radio" name="tamanho" value="P" id="idP">
+            <label for="idP">P</label> <br>
+            <input type="radio" name="tamanho" value="M">
+            <label for="">M</label> <br>
+            <input type="radio" name="tamanho" value="G">
+            <label for="">G</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Selecione</legend>
+            <input type="checkbox" name="cor" id="" value="azul"> azul <br>
+            <input type="checkbox" name="cor" id="" value="vermelho"> vermelho <br>
+            <input type="checkbox" name="cor" id="" value="verde"> verde <br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
